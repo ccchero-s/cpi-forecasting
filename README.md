@@ -26,19 +26,12 @@ The dataset captures long-term inflation trends across multiple economic cycles.
 
 ## Exploratory Data Analysis
 
-Exploratory data analysis was conducted to identify key time series characteristics including:
+The CPI time series demonstrates a strong long-term upward trend, reflecting persistent inflation over the past three decades.
 
-- Long-term trends
-- Seasonality
-- Stationarity
+![CPI Trend](images/cpi_trend.png)
 
-The CPI series shows a clear upward trend over the past three decades, reflecting long-term inflation growth.
+From 1990 to 2022, the CPI index increased steadily, rising from approximately 50 to over 120. The trend is relatively smooth, indicating gradual inflation growth without extreme volatility.
 
-During the observed period:
-- CPI increased from approximately **60 in 1992**
-- to approximately **120 in 2022**
-
-Seasonal fluctuations exist but are relatively small compared to the dominant long-term upward trend.
 
 ---
 
@@ -73,6 +66,13 @@ Models were evaluated using **Mean Squared Error (MSE)** to measure forecasting 
 The **ARIMA model achieved the lowest MSE**, indicating the most accurate forecasts among the tested models.
 
 ---
+## ARIMA Forecast
+
+The ARIMA model was implemented to capture the underlying time series structure and generate forecasts.
+
+![ARIMA Forecast](images/cpi_forecast.png)
+
+The forecasted CPI values closely follow the actual CPI observations in the validation period, demonstrating the model’s ability to capture the underlying inflation trend.
 
 ## Key Insights
 
